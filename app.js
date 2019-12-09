@@ -39,8 +39,8 @@ app.use(function(err, req, res, next) {
 });
 
 const port = 9999;
-app.listen(port, () => {
-  console.log(`App running on port ${port}.`)
+app.listen(process.env.PORT || 9999, () => {
+  console.log(`App running on port `);
 })
 
 module.exports = app;
